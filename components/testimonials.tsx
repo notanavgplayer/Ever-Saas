@@ -12,7 +12,7 @@ export default function Testimonials() {
           <div>
             <div className="relative isolate">
               {/* Section header */}
-              <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+              <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20" data-aos="fade-down">
                 <h2 className="h2 mb-4 tracking-tight text-black">
                   #PluraAI: Client Testimonials Sharing the ❤️ for AI
                   Content Creation

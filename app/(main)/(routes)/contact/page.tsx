@@ -33,7 +33,7 @@ function ContactPage() {
             <div className="flex items-center mb-3">
               <Mail size={20} color="#4a5568" className="mr-2" />
               <p className="text-base text-black">
-                Email: info@intellicanet.com{" "}
+                Email: info@pluraai.com{" "}
               </p>
             </div>
             {/* <div className="flex items-center mb-3">
