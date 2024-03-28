@@ -42,7 +42,7 @@ export default function Hero() {
           >
             <div className="mx-auto mb-4 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-300 bg-white px-7 py-2 shadow-md backdrop-blur transition-all hover:border-gray-400 hover:bg-white/50">
               <p className="text-sm font-semibold text-gray-700">
-                IntellicaNet is live now!
+                Plura AI is live now!
               </p>
             </div>
 
@@ -64,7 +64,7 @@ export default function Hero() {
                   data-aos="fade-up"
                   data-aos-delay="200"
                 >
-                  Welcome to IntellicaNet AI, where innovation meets efficiency!
+                  Welcome to Plura AI, where innovation meets efficiency!
                   We offer a suite of cutting-edge artificial intelligence tools
                   designed to empower and simplify your work. Whether you're a
                   creative professional, a busy entrepreneur, or simply someone

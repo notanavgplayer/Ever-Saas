@@ -19,7 +19,7 @@ export default function Header() {
           <div className="shrink-0 mr-4">
             {/* Logo */}
             <Link href="/">
-            <h1 className="text-blue-600 text-3xl font-extrabold ">IntellicaNet AI<span className="font-semibold text-black">.</span></h1>
+            <h1 className="text-blue-600 text-4xl font-extrabold ">Plura AI<span className="font-semibold text-black">.</span></h1>
           </Link>
           </div>
           <div className="block lg:hidden">

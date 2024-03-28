@@ -37,7 +37,7 @@ const Sidebar = ({ apilimitCount = 0, isSubscribed = false }: SidebarProps) => {
     >
       <div className="flex relative w-full text-center h-16">
         <Link href="/">
-        <h1 className="text-blue-600 text-3xl font-extrabold ml-4">IntellicaNet AI<span className="font-semibold text-black">.</span></h1>
+        <h1 className="text-blue-600 text-3xl font-extrabold ml-4">Plura AI<span className="font-semibold text-black">.</span></h1>
         </Link>
       </div>
       <div className="flex flex-col mt-8 gap-2">

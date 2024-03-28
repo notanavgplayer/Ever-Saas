@@ -52,8 +52,8 @@ export async function GET(
           price_data: {
             currency: "USD",
             product_data: {
-              name: "IntellicaNet",
-              description: "Access Unlimited AI Generations On IntellicaNet",
+              name: "Plura AI",
+              description: "Access Unlimited AI Generations On Plura AI",
             },
             unit_amount: params.subsType === "month" ? 1000 : 10000,
             recurring: {

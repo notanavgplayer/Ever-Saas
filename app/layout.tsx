@@ -22,8 +22,8 @@ const architects_daughter = Architects_Daughter({
 });
 
 export const metadata = {
-  title: "IntellicaNet",
-  description: "IntellicaNet",
+  title: "Plura AI",
+  description: "The best AI tools!",
 };
 
 export default function RootLayout({

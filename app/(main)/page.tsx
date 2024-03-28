@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "IntellicaNet - AI Powered Tools!",
+  title: "Plura - AI Powered Tools!",
   description: "Page description",
 };
 
@@ -9,14 +9,15 @@ import Zigzag from "@/components/zigzag";
 import Testimonials from "@/components/testimonials";
 import Header from "@/components/ui/header";
 import { Hero2 } from "@/components/hero2";
+import { Feature } from "@/components/logoclouds";
 
 export default function Home() {
   return (
     <>
       <Header />
       <Hero />
-      <Hero2 />
       <Features />
+      <Feature/>
       <Zigzag />
       <Testimonials />
     </>

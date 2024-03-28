@@ -14,12 +14,12 @@ export default function Testimonials() {
               {/* Section header */}
               <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
                 <h2 className="h2 mb-4 tracking-tight text-black">
-                  #IntellicaNetLove: Client Testimonials Sharing the ❤️ for AI
+                  #PluraAI: Client Testimonials Sharing the ❤️ for AI
                   Content Creation
                 </h2>
                 <p className="text-[17px] lg:text-lg tracking-tight text-zinc-600">
                   The journey from blank page to brilliant content can be
-                  daunting. But with IntellicaNet AI by your side, it's an
+                  daunting. But with Plura AI by your side, it's an
                   exciting adventure! Our clients share their unique stories,
                   highlighting the challenges they faced and the incredible
                   content they were able to create with our help.
@@ -52,7 +52,7 @@ export default function Testimonials() {
                     </div>
                   </div>
                   <blockquote className="text-lg text-gray-400 grow">
-                    — Before IntellicaNet, writer's block was my nemesis. Now,
+                    — Before Plura AI, writer's block was my nemesis. Now,
                     the AI story generator sparks fresh ideas, and the text
                     expander saves me tons of time on repetitive phrases. It's a
                     game-changer for busy bloggers!
@@ -94,7 +94,7 @@ export default function Testimonials() {
                     </div>
                   </div>
                   <blockquote className="text-lg text-gray-400 grow">
-                    — My social media engagement was drowning. IntellicaNet's
+                    — My social media engagement was drowning. Plura's
                     image generation tool brought unique visuals to my posts,
                     and text-to-speech created grabby audio clips. My audience
                     loves it!
@@ -136,7 +136,7 @@ export default function Testimonials() {
                   </div>
                   <blockquote className="text-lg text-gray-400 grow">
                     — I wasn't sure how AI could help my writing, but
-                    IntellicaNet surprised me! It sparks creativity, saves time,
+                    Plura surprised me! It sparks creativity, saves time,
                     and offers a variety of tools for any content need. Give it
                     a try - you won't regret it
                   </blockquote>

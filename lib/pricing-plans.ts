@@ -16,7 +16,7 @@ Unleash your creativity with our platform's innovative tools. Start your free tr
     mostPopular: false,
   },
   {
-    title: "IntellicaNet Pro",
+    title: "Plura Pro",
     price: `$30`,
     currency: "USD",
     frequency: "/month",
