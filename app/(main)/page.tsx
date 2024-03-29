@@ -10,6 +10,7 @@ import Testimonials from "@/components/testimonials";
 import Header from "@/components/ui/header";
 import { Hero2 } from "@/components/hero2";
 import { Feature } from "@/components/logoclouds";
+import FeaturesBlocks from "@/components/features-blocks";
 
 export default function Home() {
   return (
@@ -17,9 +18,9 @@ export default function Home() {
       <Header />
       <Hero />
       <Features />
-      <Feature/>
-      <Zigzag />
+      <FeatureBlocks />
       <Testimonials />
+      <Newsletter />
     </>
   );
 }

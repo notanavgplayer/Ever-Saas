@@ -51,7 +51,7 @@ export default function Testimonials() {
                       </svg>
                     </div>
                   </div>
-                  <blockquote className="text-lg text-gray-400 grow">
+                  <blockquote className="text-md grow text-white">
                     — Before Plura AI, writer's block was my nemesis. Now,
                     the AI story generator sparks fresh ideas, and the text
                     expander saves me tons of time on repetitive phrases. It's a
@@ -93,7 +93,7 @@ export default function Testimonials() {
                       </svg>
                     </div>
                   </div>
-                  <blockquote className="text-lg text-gray-400 grow">
+                  <blockquote className="text-md grow text-white">
                     — My social media engagement was drowning. Plura's
                     image generation tool brought unique visuals to my posts,
                     and text-to-speech created grabby audio clips. My audience
@@ -134,7 +134,7 @@ export default function Testimonials() {
                       </svg>
                     </div>
                   </div>
-                  <blockquote className="text-lg text-gray-400 grow">
+                  <blockquote className="text-md grow text-white">
                     — I wasn't sure how AI could help my writing, but
                     Plura surprised me! It sparks creativity, saves time,
                     and offers a variety of tools for any content need. Give it
