@@ -71,6 +71,14 @@ export default function Footer() {
                       Text To Speech
                     </Link>
                   </li>
+                  <li className="mb-1">
+                    <Link
+                      href="/text-expander"
+                      className="text-zinc-600 hover:text-gray-100 transition duration-150 ease-in-out"
+                    >
+                      Text Expander
+                    </Link>
+                  </li>
                 </ul>
               </div>
 
@@ -199,7 +207,7 @@ export default function Footer() {
             </ul> */}
 
           <div className="text-zinc-600 text-sm mr-4 text-center">
-            &copy; 2024 Plura AI - All rights reserved.
+            &copy; Plura AI - All rights reserved.
           </div>
         </div>
       </div>
