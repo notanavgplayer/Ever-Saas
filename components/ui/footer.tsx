@@ -207,7 +207,7 @@ export default function Footer() {
             </ul> */}
 
           <div className="text-zinc-600 text-sm mr-4 text-center">
-            &copy; Plura AI - All rights reserved.
+            &copy; 2024 Plura AI - All rights reserved.
           </div>
         </div>
       </div>

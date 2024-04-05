@@ -37,7 +37,7 @@ export default function Newsletter() {
 
               {/* CTA content */}
               <div className="text-center lg:text-left lg:max-w-xl">
-                <h3 className="h3 text-white mb-2">Want news regaring Plura AI - Subscribe Now!</h3>
+                <h3 className="h3 text-white mb-2">Want news regarding Plura AI - Subscribe Now!</h3>
                 <p className="text-gray-300 text-lg mb-6">Stay Connected, Stay Informed</p>
 
                 {/* CTA form */}
