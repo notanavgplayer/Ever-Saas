@@ -1,10 +1,11 @@
 import Header from "@/components/ui/header";
 import { checkSubscription } from "@/lib/subscription";
+import { checkSubscriptionPaypal } from "@/lib/subscriptionpaypal";
 import PricingButtonForFree from "./_components/buttonFree";
 import ButtonPro from "./_components/buttonPro";
 
 const PricingPlans = async () => {
-  const isSubscribed = await checkSubscription();
+  const isSubscribed = await checkSubscriptionPaypal();
   return (
     <div>
       <Header />

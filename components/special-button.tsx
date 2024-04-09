@@ -1,23 +1,39 @@
 
 "use client";
 import { useStore } from '@/hooks/use-pro-modal';
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import axios, { AxiosError } from "axios";
 
 
 const SpecialButton = () => {
 
-  const { onOpen} = useStore()
+  const { onOpen } = useStore()
+  const [subscribe, setSubscribe] = useState(false)
 
-  const handleClick = () => {
+  const handleClick = async () => {
     onOpen()
   }
 
+  const callRequest = async () => {
+    const result = await axios.post("/api/forspecial");
+    setSubscribe(result?.data?.isSubscribed)
+    console.log(result?.data?.isSubscribed.toString());
+  }
+
+  useEffect(() => {
+    callRequest()
+  }, [])
+
+  // useEffect(() => {
+
+  // }, [subscribe])
+
 
   return (
-    <div id="pulsa" className="pulsa">
-      <button
-      onClick={handleClick}
-      
+    <div id="pulsa" className={subscribe === false ? "pulsa" : ""}>
+      {subscribe === false ? <button
+        onClick={handleClick}
+
         id="cta" className="cta">
         Upgrade Pro<div className="star a"></div>
         <div className="star b"></div>
@@ -48,7 +64,7 @@ const SpecialButton = () => {
             d="M541.44 94.144L500.416 35.008l-45.696 59.136v29.504h89.024v-29.504zM459.456 288.64h88.96v88.896h-88.96zM459.456 467.456h88.96v88.96h-88.96zM459.456 634.176h88.96v88.896h-88.96zM364.928 788.736h277.76v44.352h-277.76z"
           ></path>
         </svg>
-      </button>
+      </button> : ""}
     </div>
   );
 }

@@ -1,10 +1,11 @@
 import Sidebar from "@/components/side-bar";
 import { getApiLimitCount } from "@/lib/api-limit";
 import { checkSubscription } from "@/lib/subscription";
+import { checkSubscriptionPaypal } from "@/lib/subscriptionpaypal";
 import React from "react";
 
 const layout = async ({ children }: { children: React.ReactNode }) => {
-  const isSubscribed = await checkSubscription();
+  const isSubscribed = await checkSubscriptionPaypal();
   const apilimitCount = await getApiLimitCount();
   return (
     <div className=" min-h-screen grid grid-cols-12">

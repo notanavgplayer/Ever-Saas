@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 import Replicate from "replicate";
 import { checkApiLimit, incrementApiLimit } from "@/lib/api-limit";
 import { checkSubscription } from "@/lib/subscription";
+import { checkSubscriptionPaypal } from "@/lib/subscriptionpaypal";
 
 export async function POST(req: Request) {
   try {
@@ -47,7 +48,7 @@ export async function POST(req: Request) {
     }
 
     const freeTrial = await checkApiLimit();
-    const isSubscribed = await checkSubscription();
+    const isSubscribed = await checkSubscriptionPaypal();
 
     if (!freeTrial && !isSubscribed) {
       return new NextResponse("expired trial", { status: 403 });

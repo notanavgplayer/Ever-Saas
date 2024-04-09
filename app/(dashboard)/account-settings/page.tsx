@@ -1,5 +1,6 @@
 import TopBar from "@/components/top-bar";
 import { checkSubscription } from "@/lib/subscription";
+import { checkSubscriptionPaypal } from "@/lib/subscriptionpaypal";
 import { Settings2 } from "lucide-react";
 import AccountSettingsButton from "./_components/AccountSettingsButton";
 import FreeCounter from "@/components/free-counter";
@@ -7,7 +8,7 @@ import { checkApiLimit, getApiLimitCount } from "@/lib/api-limit";
 import { maxFreeCount } from "@/lib/freeCount";
 
 const page = async () => {
-  const subscribed = await checkSubscription();
+  const subscribed = await checkSubscriptionPaypal();
   const apilimitCount = await getApiLimitCount();
 
   return (

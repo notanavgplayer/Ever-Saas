@@ -7,6 +7,7 @@ import "@/app/css/additional-styles/special-button.css";
 import "@/app/css/additional-styles/loader.css";
 import { Toaster } from "react-hot-toast";
 import ProModalProvider from "@/providers/pro-modal-provider";
+import ReactQueryProvider from "@/providers/react-query-provider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -36,18 +37,20 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${architects_daughter.variable} font-inter antialiased bg-[#FFFFF] text-gray-200 tracking-tight`}
       >
-        <ClerkProvider
-          appearance={{
-            baseTheme: dark,
-            variables: { colorPrimary: "#4f46e5" },
-          }}
-        >
-          <div className="flex flex-col min-h-screen overflow-hidden">
-            <ProModalProvider />
-            {children}
-            <Toaster position="top-center" gutter={8} />
-          </div>
-        </ClerkProvider>
+        <ReactQueryProvider>
+          <ClerkProvider
+            appearance={{
+              baseTheme: dark,
+              variables: { colorPrimary: "#4f46e5" },
+            }}
+          >
+            <div className="flex flex-col min-h-screen overflow-hidden">
+              <ProModalProvider />
+              {children}
+              <Toaster position="top-center" gutter={8} />
+            </div>
+          </ClerkProvider>
+        </ReactQueryProvider>
       </body>
     </html>
   );

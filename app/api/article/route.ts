@@ -1,5 +1,6 @@
 import { checkApiLimit, incrementApiLimit } from "@/lib/api-limit";
 import { checkSubscription } from "@/lib/subscription";
+import { checkSubscriptionPaypal } from "@/lib/subscriptionpaypal";
 import { auth } from "@clerk/nextjs";
 import axios from "axios";
 import { NextResponse } from "next/server";
@@ -21,7 +22,7 @@ console.log( "Rapid api key" , process.env.RAPID_API_KEY)
     }
 
     const freeTrial = await checkApiLimit();
-    const isSubscribed = await checkSubscription();
+    const isSubscribed = await checkSubscriptionPaypal();
 
     if (!freeTrial && !isSubscribed) {
       return new NextResponse("expired trial", { status: 403 });

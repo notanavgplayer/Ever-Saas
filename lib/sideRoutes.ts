@@ -35,9 +35,9 @@ export const sidebarRoutes = [
     Icon: Speech,
     path: "/text-to-speech",
   },
-  {
-    label: "Account settings",
-    Icon: Settings2,
-    path: "/account-settings",
-  },
+  // {
+  //   label: "Account settings",
+  //   Icon: Settings2,
+  //   path: "/account-settings",
+  // },
 ];

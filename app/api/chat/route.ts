@@ -1,5 +1,6 @@
 import { checkApiLimit, incrementApiLimit } from "@/lib/api-limit";
 import { checkSubscription } from "@/lib/subscription";
+import { checkSubscriptionPaypal } from "@/lib/subscriptionpaypal";
 import { NextResponse } from "next/server";
 import OpenAI from "openai";
 
@@ -11,7 +12,7 @@ export async function POST(req: Request) {
   const { messages } = await req.json();
 
   const freeTrial = await checkApiLimit();
-  const isSubscribed = await checkSubscription();
+  const isSubscribed = await checkSubscriptionPaypal();
 
   if (!freeTrial && !isSubscribed) {
     return new NextResponse("expired trial", { status: 403 });
